@@ -1,0 +1,122 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); 
+    font-family: 'Arial', sans-serif;
+}
+
+
+.login-box {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.login-box:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.login-box h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.login-box input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 30px;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+
+.login-box input:focus {
+    border-color: #ff5f6d;
+    background-color: #fff;
+}
+
+
+.login-box button {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371); 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.login-box button:hover {
+    background: linear-gradient(135deg, #ffc371, #ff5f6d); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.login-box input,
+.login-box button {
+    transition: all 0.3s ease;
+}
+
+
+@media (max-width: 600px) {
+    .login-box {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+    }
+}
+
+.login-box button {
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #5c6bc0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.login-box button:active {
+    background-color: #3949ab;
+    transform: translateY(2px) scale(0.98);  /* Click effect */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth transition for input fields */
+.login-box input {
+    transition: all 0.3s ease;
+}
+
+.login-box input:focus {
+    background: #e0e0e0;
+    transform: scale(1.02);  /* Slight zoom on focus */
+}
+
